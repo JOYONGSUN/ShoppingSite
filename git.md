@@ -5,7 +5,15 @@
 
 ```
 소스트리사용
-공부유튜브:https://www.youtube.com/watch?v=aBSKvrRzfw0
+
+공부유튜브
+https://www.youtube.com/watch?v=aBSKvrRzfw0
+https://learngitbranching.js.org/?locale=ko
+
+병합하기1
+헤드 브랜치에 변경사항이 없고
+병합 대상 브랜치가 헤드로부터 시작된 경우
+아주 쉽게 병합가능=Fast-forward
 ```
 
 
@@ -18,3 +26,6 @@
 | commit     |   세이브, 스테이지 영역의 파일들을 가지고 커밋(=세이브)를 만들 수 있다.   |
 | push     |   원격 저장소에 커밋을 업로드 한다.   |
 | checkout     |  마지막커밋으로돌아가기,코드뭉치버리기   |
+| 브랜치     |   기존 내용을 유지한 채 새로운 내용을 추가하고 싶을때 사용   |
+| 체크아웃     |   특정 브랜치(혹은 커밋)으로 돌아가고 싶을 때 사용   |
+| 소스트리의 체크아웃     |   브랜치 이름을 더블클릭라는 것만으로 체크아웃 가능   |
