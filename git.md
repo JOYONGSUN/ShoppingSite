@@ -8,6 +8,7 @@
 
 공부유튜브
 https://www.youtube.com/watch?v=aBSKvrRzfw0
+https://www.inflearn.com/course/git-and-github/#
 https://learngitbranching.js.org/?locale=ko
 
 병합하기1
