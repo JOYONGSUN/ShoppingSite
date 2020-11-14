@@ -9,31 +9,41 @@ CSS(Cascading Style Sheets)
 <style>
 	h3{ /*css선택자(html문서에서 꾸미고자 하는 영역을 선택하는 역할)h3*/
 		color: red; /*css명령(color속성,red속성값):글자색상:영문이름*/
-		text-shadow: 2px 2px 10px gray; /*글자에 그림자 넣기:오른쪽 아래쪽 흐린정도(px클수록 흐려짐) 그림자색상*/
-		font-weight: bold;
-		text-decoration: underline;
+		text-shadow: 2px 2px 10px gray; /*글자에 그림자 넣기:오른쪽 아래쪽 흐린정도(px클수록 흐려짐) 그림자색상(#888888)*/
+		font-weight: bold; /*글자의 두께 두껍게,normal 일반굵기로 지정*/
+		text-decoration: underline; /*글자에 밑줄을 친다.*/
 	}
-	p{
+	p{ /*태그선택자:태그의 영역선택*/
 		color: #444444;/*css명령(color속성,red속성값):글자색상:색상코드#6개의숫자*/
-		font-size: 18px;
-		font-family: '바탕';
-		line-height: 150px;
+		font-size: 18px; /*글자크기:12,14,20,30*/
+		font-family: '바탕'; /*한글글꼴:굴림,돋움,바탕,맑은고딕/영문글꼴:Times New Roman,Aria,Georgia*/
+		line-height: 150px; /*%문단의줄간격:150%는 기존 줄 간격보다 1.5배 넓다,150,180,200*/
 	}
-	span{ /*div랑 span차이점 공부필요*/
+	span{ /*특정부분의 글자만 css적용*/
+
+	}
+	li{
+		list-style-image: url('글머리 이미지.gif');
+		list-style-type: square; /*none(글머리 표시안함),square(정사각),disc(동그라미점),circle(빈 동그라미)*/
+	}
+	#fly{ /*id선택자*/
+
+	}
+	.blue{ /*class선택자*/
 
 	}
 
 </style>
 </head>
 <body>
-<!------------------------------------------------------------------------------>
-    <!--
-    row 창의행으로 넘어가면 세로 스크롤바가 생김
-    cols 창의너비로 영문이나 숫자등을 입력할수 있음 한글은 영문자 두자리 차지
-    -->
-	    <form>
-	    	문의내용<br>
-	    	<textarea rows='5' cols='60'></textarea>
-	    </form>
+	<h2>루마토 펜션 안내</h2>
+	<ul>
+		<li><span>주소</span> : 경기도 양평군 지평면 일신리</li>
+		<li><span>전화번호</span> : 1588 - 0000</li>
+		<li><span>객실 수</span> : 100개</li>
+		<li><span>부대시설</span> : 한식당, 눈썰매장, 탁구장, 수영장</li>
+	</ul>
+	<p>유의사항</p>
 </body>
 </html>
+웹페이지 레이아웃 가로 기준 
