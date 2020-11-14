@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>표</title>
+<style>
+	table,tr,th,td{
+		border: solid 1px black;
+		border-collapse: collapse;
+		padding: 8px;
+	}
+</style>
+</head>
+<body>
+<!--테이블:열차시간표,일기예보,버스 시간표,수업 시간표,달력-->
+<!------------------------------------------------------------------------------>
+    <!--<table>태그:표-->
+    <!--<tr>태그:하나의 행-->
+    <!--<th>태그:테이블제목,첫번째행,각열의 셀제목,두껍고,중앙배치-->
+    <!--<td>태그:일반셀,<th>제외한 나머지행,각각의셀*빈셀은 태그안에 아무것도 넣지 않는다.-->
+	<table>
+	<tr>
+	<!--셀제목-->
+	<th>출발</th><th>도착</th><th>객실</th><th>요금</th>
+	</tr>
+	<tr>
+	<!--셀-->
+	<td>서울(00:00)</td><td>청주(00:00)</td><td>일반실</td><td>10,000원</td>
+	</tr>
+	</table>
+
+
+	<!--테이블의 행과 열을 합치기
+		속성:row(행)span 행을 합침
+			col(column열)span 열을 합침-->
+	<table>
+	<tr>
+		<th rowspan='2'>지역</th><th colspan='2'>27일(목)</th><th colspan='2'>28일(금)</th>
+		<th colspan='2'>29일(토)</th>
+	</tr>
+	<tr>
+		<td>오전</td><td>오후</td><td>오전</td><td>오후</td><td>오전</td><td>오후</td>
+	</tr>
+	<tr>
+		<td>서울<br>경기도</td>
+		<td><img src='서울&경기도이미지.jpg'></td>
+		<td><img src='서울&경기도이미지.jpg'></td>
+		<td><img src='서울&경기도이미지.jpg'></td>
+		<td><img src='서울&경기도이미지.jpg'></td>
+		<td><img src='서울&경기도이미지.jpg'></td>
+		<td><img src='서울&경기도이미지.jpg'></td>
+	</tr>
+	</table>
+</body>
+</html>
