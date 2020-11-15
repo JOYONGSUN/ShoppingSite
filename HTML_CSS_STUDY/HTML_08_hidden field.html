@@ -2,13 +2,15 @@
 <html>
 <head>
 <meta charset='utf-8'>
-<title>표</title>
+<title>hidden(비밀번호같은거 주소창 보안)</title>
 <style>
-	table,tr,th,td{
-		border: solid 1px black;
-		border-collapse: collapse;
-		padding: 8px;
-	}
 </style>
 </head>
 <body>
+	<form action="http://localhost/hidden.php">
+		<input type="text" name="id">
+		<input type="hidden" name="hide(집합)" value="주소창가려지는 문구"> <!--숨기기-->
+		<input type="submit">
+	</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>lable(클릭범위 확장)</title>
+<style>
+</style>
+</head>
+<body>
+        <form action="http://localhost/hidden.php">
+        <p>
+        <label for="id_txt">text:</lable> <!--레이블로 텍스트 감싸기,무언가의 이름표이다라고 기술,input id="id_txt"와연결(id와 for연결),텍스트 글씨에 클릭하면 공란으로 커서 이동-->
+        <input id="id_txt" type="text" name="id" value="아이디를 입력하세요">
+    	</p>
+    	<p><!--레이블로 영역 감싸기 -->
+    	<label>comment:
+	    <textarea id="comment" rows='5' cols='60'>기본값이 들어가요</textarea>
+	    </label>
+	    </p>
+        </form>
+</body>
+</html>
