@@ -7,25 +7,58 @@
 </style>
 </head>
 <body>
+	
 	<h3>프로필 상세</h3>
-	    <form>
+<!------------------------------------------------------------------------------>
+	    <form action="http://localhost/order.php">
+	    <!--단일선택:정보공개(공개/비공개),취미,사이즈-->
+	    <p>
 	    정보공개 : <input type='radio' checked>공개
 	    		  <input type='radio'>비공개
-	    <br>
-	    취미 : <input type='checkbox'>게임
-	    	   <input type='checkbox' checked>영화감상
+	    </p>
+	    <p>
+	    <input type='radio' name="size" value="95"> 95size
+	    <input type='radio' name="size" value="100"> 100size
+	    </p>
+	    <input type="submit"> <!--서버전송(1):선택사항 제출-->
+	    </form>   
+<!------------------------------------------------------------------------------>
+		<form>
+		<!--다중선택:사이즈선택-->
+	    취미 : <input type='checkbox' checked>게임
+	    	   <input type='checkbox'>영화감상
 	    </form>
+<!------------------------------------------------------------------------------>
 	    <form>
 	    	쳠부파일 : <input type='file'>
 	    </form>
-	    <form>
+<!------------------------------------------------------------------------------>
+	    <!--<form>-->
+	    <form action="http://localhost/color.php"><!--서버전송(3):선택사항 제출-->
 	    	이메일 : <input type='text'>@
-	    	<select>
-	    		<option>선택</option>
-	    		<option>naver.com</option>
-	    		<option>hanmail.net</option>
-	    		<option>직접입력</option>
+			<!--dropdown list(단일선택)-->
+			<!--<select>-->
+	    	<select name="color"><!--서버전송(2):선택사항 제출-->
+	    		<option value="black">선택</option> <!--value는 컴퓨터전송데이터,선택은 사용자가 보이는 문안-->
+	    		<option value="black">naver.com</option>
+	    		<option value="black">hanmail.net</option>
+	    		<option value="black">직접입력</option>
 	    	</select>
+	    	<input type="submit"> <!--서버전송(1):선택사항 제출-->
+	    	</form>
+<!------------------------------------------------------------------------------>
+			<!--dropdown list(다중선택):multiple:ctrl키눌러 다중선택-->
+			<form action="http://localhost/color.php"><!--서버전송(3):선택사항 제출-->
+			<!--<select>-->
+	    	<select name="color2" multiple><!--서버전송(2):선택사항 제출-->
+	    		<option value="black">선택</option> <!--value는 컴퓨터전송데이터,선택은 사용자가 보이는 문안-->
+	    		<option value="black">naver.com</option>
+	    		<option value="black">hanmail.net</option>
+	    		<option value="black">직접입력</option>
+	    	</select>
+	    	<input type="submit"> <!--서버전송(1):선택사항 제출-->
+	    	</form>
+<!------------------------------------------------------------------------------>
 	    	<br>
 			생년월일(필수) :
 			<select>
